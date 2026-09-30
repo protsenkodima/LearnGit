@@ -48,5 +48,3 @@ def delete_task(task_id: int) -> Response:
             task_list.remove(task)
             return Response(status_code=status.HTTP_204_NO_CONTENT)
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Task not found")
-
-print ("hello")
