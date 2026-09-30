@@ -34,11 +34,6 @@ def create_task(new_task: TaskCreateSchema) -> Response:
     task_list.append(new_task)
     return Response(status_code=status.HTTP_201_CREATED)
 
-
-@app.get("/tasks")
-def read_tasks() -> list[TaskSchema]:
-    return task_list
-
 @app.get("/tasks/{task_id}")
 def get_task_by_id(task_id: int) -> TaskSchema:
     for task in task_list:
