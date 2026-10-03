@@ -13,3 +13,6 @@ class TaskCreateSchema(BaseModel):
     title: str
     description: str = None
 app = FastAPI()
+
+
+print ("this is main!")
