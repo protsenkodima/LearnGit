@@ -13,14 +13,3 @@ class TaskCreateSchema(BaseModel):
     title: str
     description: str = None
 app = FastAPI()
-
-task_list = [
-    {
-    "id": 1,
-    "title": "Task 1",
-    "description": "Task 1",
-    "completed": False
-    }
-]
-
-print ("hello")
